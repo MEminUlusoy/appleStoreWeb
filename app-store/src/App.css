@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerContainer{
+
+    
+    background-image: url("https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+
+.overlay{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.searchButton{
+    
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.searchButtonMiddle{
+    
+    height: 50px;
+    width: 500px;
+}
+
+.searchButtonMiddle input{
+    background-color: whitesmoke;
+    
+    
+    border-style: hidden;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.mainContainer{
+    height: 700px;
+    width: auto;
+    
+    
+    position: relative;
+}
+
+.explainList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    row-gap: 10px;
+    
+    
+}
+
+.explainItem1,.explainItem2,.explainItem3{
+    
+    display: flex;
+    height: 200px;
+    
+
+    
+    
+}
+
+.itemP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.itemImage{
+    
+    height: 100%;
+    
+    
+}
+
+.itemImage img{ 
+    
+    height: 100%;
+    
+}
+
+
+
+
+
+
