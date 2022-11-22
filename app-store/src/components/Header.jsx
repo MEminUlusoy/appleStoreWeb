@@ -1,6 +1,7 @@
 import React from 'react';
 import "../App.css";
 import { NavLink } from 'react-router-dom';
+import Footer from './Footer';
 
 
 
@@ -12,38 +13,39 @@ function Header() {
         {/* ------------------ HEADER --------------- */}
         
         <div className='headerContainer'>
-
             <div className='navbar'> 
 
                 <div className='navbar-logo'>
-                    <NavLink className="navlink" to="/home"><h3><span className='logoMy'>-My</span>Dietetic-</h3></NavLink>
+                    <NavLink className="navlink" to="/"><h3><span className='logoMy'>-My</span>Dietetic-</h3></NavLink>
 
                 </div>
 
 
                 <div className='navbar-list'>
                     <ul>
-                        <li><a href="#plan">MEAL-PLAN</a></li>
-                        <li><a href="/sigin">SIGN IN</a></li>
-                        <li><a href="/register">REGISTER</a></li>
-                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="#plan">ÖĞÜN-PLANLA</a></li>
+                        <li><a href="/login">GİRİŞ</a></li>
+                        <li><a href="/register">HESAP</a></li>
+                        <li><a href="/about">HAKKINDA</a></li>
                     </ul>
                 </div>
 
-
             </div>
-            
-            
-            
-            <div className='searchButton'> 
-                <div className='searchButtonMiddle'>
-                    <input type="text" placeholder ="How Much Calorie? " id="search" />
-                    
+
+            <div className='headerImg'>
+                <img src="https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" /> 
+                <div className='searchButton'> 
+                    <div className='searchButtonMiddle'>
+                        <input type="text" placeholder ="How Much Calorie? " id="search" />        
+                    </div>
                 </div>
+            </div>      
+                
+            
 
-            </div>
         </div>
-            {/* ------------------ MAIN --------------- */}
+
+        {/* ------------------ MAIN --------------- */}
 
         <div className='mainContainer'>
             <div className='explainList'>
@@ -122,8 +124,13 @@ function Header() {
             </div>
         
         </div>
+        <div>
+            <Footer/>
+        </div>
 
+        
     </div>
+    
   );
 }
 
